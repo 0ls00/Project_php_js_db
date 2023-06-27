@@ -1,7 +1,11 @@
 # Project_php_js_db
 A simple website created with the use of html, css, php and js.
 
-![Slika1](https://github.com/0ls00/html_css/assets/114077183/805eb2f4-c3fb-4eb5-a252-aedfaabfaa17)
-![Slika2](https://github.com/0ls00/html_css/assets/114077183/f87a5e94-5d92-4b5e-bf82-b5de26f38022)
-![Slika3](https://github.com/0ls00/html_css/assets/114077183/fe67f9eb-6bbe-45a9-b7c4-4b6ff72752f5)
-![Slika4](https://github.com/0ls00/html_css/assets/114077183/2173b784-a930-42d2-9a17-cd0b4ea21131)
+![Slika1](https://github.com/0ls00/html_css/assets/114077183/33c87eef-e804-47b7-9d02-ac0951f41f34)
+![Slika2](https://github.com/0ls00/html_css/assets/114077183/015728a7-8e07-4882-8bdc-ad7a5abea44f)
+![Slika3](https://github.com/0ls00/html_css/assets/114077183/d2376a42-cddd-4e20-a0c8-7ee301fa7ced)
+![Slika4](https://github.com/0ls00/html_css/assets/114077183/b6b62f44-0a74-4d03-881a-a28e1dfd79ad)
+![Slika5](https://github.com/0ls00/html_css/assets/114077183/94b9a786-45d6-4b75-a2e0-a90bfcece638)
+![Slika6](https://github.com/0ls00/html_css/assets/114077183/ebd71e19-f15b-4f18-b2db-b1f497d7c13e)
+![Slika7](https://github.com/0ls00/html_css/assets/114077183/bca7a223-1649-455e-850c-31e3299b1fee)
+![Slika8](https://github.com/0ls00/html_css/assets/114077183/fd552777-cdbc-47cf-820c-98e8acb9da04)
