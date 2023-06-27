@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/RPLogo.jpg" alt="">
+            <ul>
+                <li><a href="index.php" >HOME</a></li>
+                <li><a href="kategorija.php?kategorija=sport " class="">SPORT</a></li>
+                <li><a href="kategorija.php?kategorija=politik " class="">POLITIK</a></li>
+                <li><a href="administracija.php" >ADMINISTRACIJA</a></li>
+                <li><a class="active" href="unos.html" >UNOS</a></li>
+            </ul>
+            </nav>
+    </header>
+    
+    <form name="forma" action="skripta.php" method="post" enctype="multipart/form-data">
+        <label for="naslov">Unesite naslov:</label><br>
+        <input type="text" name="naslov" id="naslov"><br>
+        <span id="porukaNaslov" class="error"></span><br>
+
+        <label for="sazetak">Unesite sažetak:</label><br>
+        <textarea name="sazetak" id="sazetak" rows="5" cols="21">
+         </textarea><br>
+        <span id="porukaSazetak" class="error"></span><br>
+
+        <label for="tekst">Unesite tekst:</label><br>
+        <textarea name="tekst" id="tekst" rows="10" cols="21">
+        </textarea><br>
+        <span id="porukaTekst" class="error"></span><br>
+
+        <label for="kategorija">Odaberite kategoriju</label><br>
+        <select id="kategorija" name="kategorija">
+            <option value="sport">Sport</option>
+            <option value="politik">Politik</option>
+            
+        </select><br>
+        <span id="porukaKategorija" class="error"></span><br>
+
+        <label for="slika">Dodajte sliku:</label>
+        <input type="file" accept="images/jpg" name="slika" id="slika"><br>
+        <span id="porukaImg" class="error"></span><br><br>
+
+        <label for="check">Želite li spremiti?</label><br>
+        <input type="checkbox" name="arhiva"><br>
+        <input type="submit" name="slanje" id="slanje" value="Pošalji">
+    
+    </form>
+</section>
+    <footer>
+        <p>© RP Digital GmbH | Alle Rechte vorbehalten
+            Content Management by InterRed</p>
+    </footer>
+
+
+
+    <script type="text/javascript">
+
+    document.getElementById("slanje").onclick = function(event) {
+        var slanje = true;
+        var naslov = document.getElementById("naslov").value;
+        var poljeNaslova = document.getElementById("naslov");
+        if (naslov.length < 5 || naslov.length > 30) {
+            slanje = false;
+            document.getElementById("porukaNaslov").innerHTML = "<br>Naslov mora imati 5 do 30 zankova!<br>";
+            document.getElementById("porukaNaslov").style.color = "red";
+            poljeNaslova.style.border = "1px solid red";
+        } else {
+            document.getElementById("porukaNaslov").innerHTML = "";
+            poljeNaslova.style.border = "1px solid black";
+        }
+        var kratki_sardzaj = document.getElementById("sazetak").value;
+        var poljeSazetka = document.getElementById("sazetak");
+        if (kratki_sardzaj.length < 10 || kratki_sardzaj.length > 100) {
+            slanje = false;
+            document.getElementById("porukaSazetak").innerHTML = "<br>Kratki sardzaj mora imati 10 do 100 zankova!<br>";
+            document.getElementById("porukaSazetak").style.color = "red";
+            poljeSazetka.style.border = "1px solid red";
+        } else {
+            document.getElementById("porukaSazetak").innerHTML = "";
+            poljeSazetka.style.border = "1px solid black";
+        }
+        var tekst = document.getElementById("tekst").value;
+        var poljeTeksta = document.getElementById("tekst");
+        if (tekst.trim() === "") {
+            slanje = false;
+            document.getElementById("porukaTekst").innerHTML = "Tekst ne smije biti prazan";
+            document.getElementById("porukaTekst").style.color = "red";
+            poljeTeksta.style.border = "1px solid red";
+        } else {
+            document.getElementById("porukaTekst").innerHTML = "";
+            poljeTeksta.style.border = "1px solid black";
+        }
+        var slika = document.getElementById("slika").value;
+        var poljeSlika = document.getElementById("slika");
+        if (slika) {
+            document.getElementById("porukaImg").innerHTML = "";
+            poljeSlika.style.border = "";
+        } else {
+            slanje = false;
+            document.getElementById("porukaImg").innerHTML = "Slika mora biti odabrana";
+            document.getElementById("porukaImg").style.color = "red";
+            poljeSlika.style.border = "1px solid red";
+        }
+        var kategorija = document.getElementById("kategorija").value;
+        var poljeKategorija = document.getElementById("kategorija");
+        if (kategorija) {
+            document.getElementById("porukaKategorija").innerHTML = "";
+            poljeKategorija.style.border = "1px solid black";
+        } else {
+            slanje = false;
+            document.getElementById("porukaKategorija").innerHTML = "<br>Kategorija mora biti odabrana";
+            document.getElementById("porukaKategorija").style.color = "red";
+            poljeKategorija.style.border = "1px solid red";
+        }
+        if (slanje != true) {
+            event.preventDefault();
+        }
+    }
+    </script>
+
+   
+</body>
+</html>

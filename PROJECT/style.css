@@ -1,0 +1,213 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #d3d9de;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    z-index: 1;
+    width: 100%;
+    height: 50px; 
+    margin-bottom: 1%;
+    background-color: white;
+    border-bottom: solid 1px #FFCB05;
+  }
+nav{
+  height: 50px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  
+  align-items: center;
+}
+nav img{
+    height: 60%;
+    width: 15%;
+  }
+
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-items: center; 
+  margin-left: auto;
+}
+
+nav li {
+  height: 100%;
+  display: flex;
+  align-items: center; 
+} 
+nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+nav a.active{
+  box-shadow: 0px -5px 0px  #FFCB05 inset;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+  bottom: 0px;
+}
+
+
+section{
+  margin-top: 50px;
+  min-height: calc(50vh - 50px);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 50%;
+  top: 10%;
+  margin: 0 auto;
+  padding: 0%;
+  margin-bottom: 2%;
+  background-color: #FFCB05;
+}
+.naslov{
+  align-items: center;
+  position: relative;
+  height: 10%;
+  padding-left: 1%;
+  background-color: #FFCB05;
+}
+.naslov p{
+  color: white;
+  text-decoration: underline;
+}
+
+article{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 1px #d3d9de;
+}
+article img{
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 23%;
+  height: 90%;
+}
+article a{
+  text-decoration: none;
+  color: black;
+}
+
+.text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  flex-grow: 1;
+  padding: 0 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.slika1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5%;
+  bottom: 0%;
+  margin-top: auto;
+  background-color: #5e6163;
+}
+footer p{
+  color: #d3d9de;
+}
+form{
+  height: 100vh;
+  position: relative;
+  width: 50%;
+  height: 43%;
+  top: 7%;
+  margin: 0 auto;
+  
+}
+ textarea{
+  height: auto;
+ }
+ .clanak{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+ }
+
+ .naslovClanak{
+  width: 70%;
+  margin: 0 auto;
+ }
+ .datum{
+  width: 70%;
+  margin: 0 auto;
+ }
+
+ .clanakSlika {
+  display: flex;
+  justify-content: center;
+  padding: 0 2%;
+  
+}
+.clanakSlika img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.sazetak{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.tekst{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+ .sazetak p{
+  width: 80%;
+  margin:  0 auto;
+ }
+ .tekst p{
+  width: 80%;
+  margin: 0 auto;
+ }
+ 
+ 
+ 
+
+ 
+ 
+
+
+
