@@ -83,10 +83,10 @@ include 'connect.php';
             }
         mysqli_close($dbc);
 
-        if($registriranKorisnik == true) {
-            echo '<p>Korisnik je uspješno registriran!</p>';
+         if($registriranKorisnik == true) {
+            echo '<form><p>Korisnik je uspješno registriran!</p></form>';
         } else {
-            echo"Error";
+            echo"<form><p>Error<p></form>";
         }
     }
     ?>
