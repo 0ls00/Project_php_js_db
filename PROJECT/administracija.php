@@ -117,7 +117,7 @@
             $_SESSION['level'] = $levelKorisnika;
         } else {
             $uspjesnaPrijava = false;
-            echo "Neuspješna prijava";
+            echo "<br><form>Neuspješna prijava<form><br><br>";
             echo "<button type='submit'><a href='./registracija.php'>Registrirajte se</a></button>";
         }
     
