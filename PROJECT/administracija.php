@@ -117,8 +117,8 @@
             $_SESSION['level'] = $levelKorisnika;
         } else {
             $uspjesnaPrijava = false;
-            echo "<br><form>Neuspješna prijava<form><br><br>";
-            echo "<button type='submit'><a href='./registracija.php'>Registrirajte se</a></button>";
+            echo "<br><form>Neuspješna prijava<br><br>";
+            echo "<button type='submit'><a href='./registracija.php'>Registrirajte se</a></button></form>";
         }
     
     }
@@ -186,6 +186,11 @@
         }
         mysqli_close($dbc);
     ?>
+<footer>
+        <p>© RP Digital GmbH | Alle Rechte vorbehalten
+        Content Management by InterRed</p>
+</footer>
+
 
 
 
