@@ -186,10 +186,13 @@
         }
         mysqli_close($dbc);
     ?>
-<footer>
+    <footer>
         <p>© RP Digital GmbH | Alle Rechte vorbehalten
-        Content Management by InterRed</p>
-</footer>
+            Content Management by InterRed</p>
+    </footer>
+
+</body>
+</html>
 
 
 
