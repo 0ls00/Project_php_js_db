@@ -158,3 +158,10 @@ include 'connect.php';
         }
 };
  </script>
+    <footer>
+        <p>© RP Digital GmbH | Alle Rechte vorbehalten
+            Content Management by InterRed</p>
+    </footer>
+
+</body>
+</html>
